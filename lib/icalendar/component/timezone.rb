@@ -28,6 +28,7 @@ module Icalendar
     ical_property :tzoffsetfrom, :timezone_offset_from
     ical_property :tzid, :timezone_id
     ical_property :tzname, :timezone_name
+    ical_property :tzurl # optional http://www.ietf.org/rfc/rfc2445.txt 4.6.5
 
     ical_property :created
     ical_property :last_modified
