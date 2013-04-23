@@ -20,15 +20,13 @@ module Icalendar
   # New York City starting from 1967. Each line represents a description
   # or rule for a particular observance.
   class Timezone < Component
-    ical_component :standard, :daylight
-
     # Single properties
     ical_property :dtstart, :start
     ical_property :tzoffsetto, :timezone_offset_to
     ical_property :tzoffsetfrom, :timezone_offset_from
     ical_property :tzid, :timezone_id
     ical_property :tzname, :timezone_name
-    ical_property :tzurl, :timezone_url # optional http://www.ietf.org/rfc/rfc2445.txt 4.6.5
+    ical_property :tzurl, :timezone_url
 
     ical_property :created
     ical_property :last_modified
